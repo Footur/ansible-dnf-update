@@ -1,14 +1,14 @@
-Ansible apt update
+Ansible dnf update
 =========
 
-Updates packages via apt
+Updates packages via dnf
 
 Example Playbook
 ----------------
 
     - hosts: all
       roles:
-         - ansible-apt-update
+         - ansible-dnf-update
 
 License
 -------

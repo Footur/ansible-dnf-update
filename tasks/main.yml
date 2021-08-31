@@ -1,4 +1,5 @@
 ---
 
-- include_tasks: apt-upgrade.yml
-  when: ansible_pkg_mgr == 'apt'
+- name: Check package manager
+  include_tasks: dnf-upgrade.yml
+  when: ansible_pkg_mgr == 'dnf'
