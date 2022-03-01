@@ -1,11 +1,7 @@
 ---
-- name: Resynchronize dnf package index
-  become: yes
-  dnf:
-    update_cache: yes
-
 - name: Upgrade dnf packages
   become: yes
   dnf:
     name: '*'
     state: latest
+    update_cache: yes
